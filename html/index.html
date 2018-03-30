@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Page principale</title>
+<title>Algorithme A-Etoile</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,12 +16,12 @@
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-<div id="titlearea">
+<div id="titlearea" style="background-color:#DFE5F1">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Algorithme A-Etoile
    </div>
   </td>
  </tr>
@@ -30,38 +30,82 @@
 </div>
 <!-- end header part -->
 <!-- Généré par Doxygen 1.8.13 -->
-<script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
-</script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-$(function() {
-  initMenu('',true,false,'search.php','Recherche');
-  $(document).ready(function() { init_search(); });
-});
-</script>
-<div id="main-nav"></div>
-</div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
 
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
-<div class="header">
-  <div class="headertitle">
-<div class="title">My Project Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaffectations_1_1Noeud.html">Noeud</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a67f8bd3aa54b9b1435ff93e627635773"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaffectations.html#a67f8bd3aa54b9b1435ff93e627635773">calculer_h</a> (noeud, couts)</td></tr>
+<tr class="separator:a67f8bd3aa54b9b1435ff93e627635773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d16cc3538affa5c1f29e4019590c03"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaffectations.html#a04d16cc3538affa5c1f29e4019590c03">affectations</a> (couts)</td></tr>
+<tr class="separator:a04d16cc3538affa5c1f29e4019590c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><pre class="fragment">\package affectations
+Un super package qui utilise l'algorithme A-Etoile pour parcourir un
+graphe qui va chercher le meilleur ensemble d'affectations pour un tableau de couts.
+</pre> </div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a04d16cc3538affa5c1f29e4019590c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d16cc3538affa5c1f29e4019590c03">&#9670;&nbsp;</a></span>affectations_optimales()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def affectations.affectations_optimales </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>couts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Retourne les affectations optimales pour une table de couts donnée.
+
+\param couts: La table de couts dont on veut trouver les affectations optimales.
+\return: Un tuple contenant la liste des affectations optimales et le nombre de noeuds développés.
+</pre> 
+</div>
+</div>
+<a id="a67f8bd3aa54b9b1435ff93e627635773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f8bd3aa54b9b1435ff93e627635773">&#9670;&nbsp;</a></span>calculer_h()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def affectations.calculer_h </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>noeud</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>couts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Calcul l'heuristique pour un noeud.
+
+\param noeud: Le noeud dont on veut calculer l'heuristique.
+\param couts: La table des couts.
+\return: L'heuristique du noeud.
+</pre> 
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

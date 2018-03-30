@@ -73,7 +73,7 @@ def calculer_h(noeud, couts):
     return max(np.amin(temp, 1).sum(), np.amin(temp, 0).sum())
 
 
-def affectations(couts):
+def affectations_optimales(couts):
 	"""Retourne les affectations optimales pour une table de couts donnée.
 	
 	\param couts: La table de couts dont on veut trouver les affectations optimales.
@@ -101,4 +101,4 @@ def affectations(couts):
 if __name__ == '__main__':
     
     couts = np.random.randint(1000, size=(20, 20))
-    print(affectations(couts))
+    print(affectations_optimales(couts))

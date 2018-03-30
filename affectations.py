@@ -100,5 +100,5 @@ def affectations_optimales(couts):
 
 if __name__ == '__main__':
     
-    couts = np.random.randint(1000, size=(20, 20))
+    couts = np.random.randint(1000, size=(10, 10))
     print(affectations_optimales(couts))
